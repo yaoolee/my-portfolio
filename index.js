@@ -4,11 +4,12 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";  
 import adminRoutes from "./routes/admin.js";
 import apiRoutes from "./routes/api.js";
+import cors from "cors";
 
 const __dirname= import.meta.dirname;
 
 const app = express();
-const port= process.env.PORT || "8888";
+const port= process.env.PORT || "3000";
 dotenv.config();
 
 
@@ -22,8 +23,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 mongoose.connect(process.env.MONGODB_URI)
 
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://your-frontend-site.com'
+  ]
+}));
 app.use('/', adminRoutes);
 app.use('/api', apiRoutes);
+
 
 
 
