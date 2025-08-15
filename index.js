@@ -26,7 +26,7 @@ mongoose.connect(process.env.MONGODB_URI)
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://your-frontend-site.com'
+    'https://portfolio-one-eosin-91.vercel.app'
   ]
 }));
 app.use('/', adminRoutes);
