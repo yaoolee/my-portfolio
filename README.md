@@ -5,6 +5,10 @@ Full‑stack portfolio with:
 - Frontend: React (Vite), Bootstrap, Bootstrap Icons
 - REST API consumed by the React app
 
+## Deployment
+
+[Live](https://portfolio-one-eosin-91.vercel.app)
+
 ## Features
 
 - Public API for Projects/Skills consumed by the React frontend
