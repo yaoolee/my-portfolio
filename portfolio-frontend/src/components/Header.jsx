@@ -33,10 +33,10 @@ export default function Header() {
               </li>
               <li className="nav-item ms-lg-3">
                 <a
-                  className="btn btn-sm btn-primary d-inline-flex align-items-center gap-2"
+                  className="btn btn-sm btn-dark d-inline-flex align-items-center gap-2"
                   href="https://github.com/yaoolee"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noreferrer noopener"
                 >
                   <i className="bi bi-github"></i>
                   <span>GitHub</span>
@@ -44,10 +44,10 @@ export default function Header() {
               </li>
               <li className="nav-item ms-2">
                 <a
-                  className="btn btn-sm btn-outline-secondary d-inline-flex align-items-center gap-2"
+                  className="btn btn-sm btn-primary d-inline-flex align-items-center gap-2"
                   href="https://www.linkedin.com/in/yao-tiem-lee/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noreferrer noopener"
                 >
                   <i className="bi bi-linkedin"></i>
                   <span>LinkedIn</span>

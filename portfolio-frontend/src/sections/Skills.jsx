@@ -3,7 +3,7 @@ import { getSkills } from '../services/api';
 
 export default function Skills() {
   const [skills, setSkills] = useState([]);
-  const [status, setStatus] = useState('loading'); // 'loading' | 'ok' | 'error'
+  const [status, setStatus] = useState('loading'); 
 
   useEffect(() => {
     getSkills()
